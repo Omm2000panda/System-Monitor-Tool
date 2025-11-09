@@ -22,7 +22,7 @@ int main() {
 
         printf("\n%-8s %-25s %-20s\n", "PID", "Process Name", "Memory");
         auto processes = getProcesses();
-        for (int i = 0; i < 10 && i < processes.size(); ++i) {
+        for (size_t i = 0; i < 10 && i < processes.size(); ++i) {
             printf("%-8d %-25s %-20s\n",
                      processes[i].pid,
                      processes[i].name.c_str(),
